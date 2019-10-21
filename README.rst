@@ -1,8 +1,7 @@
 taichigdb
 ========
 
-This is a pretty printer for taichi types (with some support for stan-math
-types). This is largely based on https://github.com/dmillard/eigengdb. Formatting 
+This is a pretty printer for taichi types. This is largely based on https://github.com/dmillard/eigengdb. Formatting 
 is handled by `numpy`.
 
 Motivation
