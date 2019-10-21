@@ -12,11 +12,22 @@ Your debugging output shouldn't look like this:
 
 .. code-block::
 
+    (gdb) p p.C
+    $1 = {static dim = 2, d = {{<taichi::VectorNDBase<2, float, (taichi::InstSetExt)0, void>> = {static simd
+     = <optimized out>, static storage_elements = <optimized out>, {d = {0, 0}, {x = 0, y = 0}}}, static dim
+     = 2, static ise = <optimized out>, static storage_elements = <optimized out>}, {<taichi::VectorNDBase<2
+    , float, (taichi::InstSetExt)0, void>> = {static simd = <optimized out>, static storage_elements = <opti
+    mized out>, {d = {0, 0}, {x = 0, y = 0}}}, static dim = 2, static ise = <optimized out>, static storage_
+    elements = <optimized out>}}, static ise = <optimized out>}
 
 But rather like this!
 
 .. code-block::
 
+    (gdb) p p.C
+    $1 = taichi::MatrixND<2,float>
+    [[0. 0.]
+     [0. 0.]]
 
 
 Installation
